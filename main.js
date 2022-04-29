@@ -62,14 +62,14 @@ function addPyramide() {
 
   const [x, y, z] = Array(3)
     .fill()
-    .map(() => THREE.MathUtils.randFloatSpread(100));
+    .map(() => THREE.MathUtils.randFloatSpread(125));
 
   cone.rotateX(THREE.MathUtils.randFloatSpread(180));
   cone.position.set(x, y, z);
   scene.add(cone);
 }
 
-Array(100).fill().forEach(addPyramide);
+Array(150).fill().forEach(addPyramide);
 
 // Scroll and rotate logic
 
